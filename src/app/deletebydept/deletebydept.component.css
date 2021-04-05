@@ -1,0 +1,26 @@
+table tr th{
+  border: 0px solid black;
+}
+
+td {
+  border: 0px solid black;
+}
+
+table{
+  text-align: left;
+  width: 100%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+.FinalCandidates{
+  padding-left: 0%;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+a{
+  text-decoration: none;
+  display: block;
+}

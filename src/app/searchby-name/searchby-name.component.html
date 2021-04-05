@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="search-hero">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder= "Search by Name">
+    </div>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Joining Date</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let candidate of candidate_data | filter:searchText">
+        <td>{{candidate.id}}</td>
+        <td>{{candidate.name}}</td>
+        <td>{{candidate.department}}</td>
+        <td>{{candidate.joining_date}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+

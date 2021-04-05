@@ -1,0 +1,19 @@
+<h1>Results For Experience Greater Than 2years</h1>
+<div class="Experience">
+  <table class="list" cellpading="0" cellspacing="0">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>JoiningDate</th>
+    </tr>
+  <ng-container *ngFor="let data of candidate_data">
+    <tr *ngIf="totalexperience(data.joining_date)">
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
+    <td>{{data.department}}</td>
+    <td>{{data.joining_date | date}}</td>
+  </tr>
+  </ng-container>
+  </table>
+  </div>
